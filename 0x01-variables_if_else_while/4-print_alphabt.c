@@ -17,14 +17,10 @@ int main(void)
 	{
 		if (alpha == 'q' || alpha == 'e')
 		{
-			putchar(alpha + 1);
 			alpha = alpha + 1;
 		}
-		else
-		{
-			putchar(alpha);
-		}
 
+		putchar(alpha);
 		alpha++;
 	}
 
