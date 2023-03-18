@@ -16,16 +16,10 @@ int main(void)
 		{
 			putchar((i % 10) + '0');
 			putchar((j % 10) + '0');
-<<<<<<< HEAD
 
 			if (i == 8 && j == 9)
 				continue;
-=======
 			
-			if (i == 8 && j == 9)
-				continue;
-			
->>>>>>> e11222584f828edf0500a637caabfa95a4ce75dd
 			putchar(',');
 			putchar(' ');
 		}
