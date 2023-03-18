@@ -9,11 +9,18 @@
 int main(void)
 {
 	int number = 0;
+	int letter = 'a';
 
-	while (number <= 16)
+	while (number < 10)
 	{
-		putchar('0x' + number);
+		putchar((number % 10) + '0');
 		number++;
+	}
+
+	while (letter <= 'f')
+	{
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 
