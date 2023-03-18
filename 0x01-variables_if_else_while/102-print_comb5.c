@@ -10,13 +10,19 @@ int main(void)
 {
 	int i, j, k, l;
 
-	for (i = 0; i < 10 ; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 10 ; j++)
+		for (j = 0; j < 9; j++)
 		{
-			for (k = 0; k < 10 ; k++)
+			for (k = 0; k < 10; k++)
 			{
-				for (l = 1; l < 10 ; l++)
+				if (i == 0 && j == 0 && k == 0)
+				{
+					l = 1;
+				}
+				else l = 0;
+
+				for (; l < 10 ; l++)
 				{
 					putchar((i % 10) + '0');
 					putchar((j % 10) + '0');
