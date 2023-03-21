@@ -17,7 +17,7 @@ void jack_bauer(void)
 		{
 			int h1 = h / 10;
 			int h2 = h % 10;
-			int m1 = m /10;
+			int m1 = m / 10;
 			int m2 = m % 10;
 
 			_putchar(h1 + '0');
