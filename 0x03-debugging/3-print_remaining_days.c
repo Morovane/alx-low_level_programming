@@ -11,7 +11,7 @@
  */
 void print_remaining_days(int month, int day, int year)
 {
-	if (month <= 12 && month >= 1 && day <= 1 && day >=31)
+	if (month <= 12 && month >= 1 && day >= 1 && day <=31)
 	{
 		if (year % 4 == 0)
 		{
