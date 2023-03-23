@@ -19,7 +19,8 @@ void more_numbers(void)
 			if (b >= 10)
 			{
 				int u = b % 10;
-				int d =b / 10;
+				int d = b / 10;
+
 				_putchar(d + '0');
 				_putchar(u + '0');
 			}
