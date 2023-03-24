@@ -9,11 +9,11 @@
  */
 void print_number(int n)
 {
-	unsigned int k = n;
+	int k = n;
 
 	if (n < 0)
 	{
-		_putchar(45);
+		_putchar('-');
 		n = n * (-1);
 		k = n;
 	}
@@ -24,5 +24,5 @@ void print_number(int n)
 	{
 		print_number(k);
 	}
-	_putchar((unsigned int) n % 10 + 48);
+	_putchar(n % 10 + 48);
 }
