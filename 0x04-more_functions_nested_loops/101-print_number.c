@@ -35,7 +35,7 @@ void print_number(int n)
 		if (d == 1)
 		{
 			_putchar(num % 10 + '0');
-			num = -1;
+			break;
 		}
 		else
 		{
