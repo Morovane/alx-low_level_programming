@@ -8,14 +8,11 @@
  */
 void print_number(int n)
 {
-	int d;
-	int test;
-	int num;
+	int d, test;
 
-	num = n;
-	if (num < 0)
+	if (n < 0)
 	{
-		num = num * -1;
+		n = n * -1;
 		_putchar('-');
 	}
 
@@ -23,23 +20,23 @@ void print_number(int n)
 	test = 1;
 	while (test)
 	{
-		if (num / (d * 10) > 0)
+		if (n / (d * 10) > 0)
 			d *= 10;
 		else
 			test = 0;
 	}
 
 
-	while (num >= 0)
+	while (n >= 0)
 	{
 		if (d == 1)
 		{
-			_putchar(num % 10 + '0');
+			_putchar(n % 10 + '0');
 			break;
 		}
 		else
 		{
-			_putchar((num / d % 10) + '0');
+			_putchar((n / d % 10) + '0');
 			d /= 10;
 		}
 	}
