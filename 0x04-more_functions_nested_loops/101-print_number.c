@@ -21,7 +21,7 @@ void print_number(int n)
 	while (test)
 	{
 		if (n / (d * 10) > 0)
-			d *= 10;
+			d = d * 10;
 		else
 			test = 0;
 	}
@@ -37,7 +37,7 @@ void print_number(int n)
 		else
 		{
 			_putchar((n / d % 10) + '0');
-			d /= 10;
+			d = d / 10;
 		}
 	}
 }
