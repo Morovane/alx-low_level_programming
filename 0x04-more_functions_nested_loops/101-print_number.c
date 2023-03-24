@@ -18,7 +18,7 @@ void print_number(int n)
 		k = n;
 	}
 
-	k /= 10; 
+	k /= 10;
 
 	if (k != 0)
 	{
