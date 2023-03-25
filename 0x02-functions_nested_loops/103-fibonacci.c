@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	unsigned long i, f1, f2, display; 
+	unsigned long i, f1, f2, display;
 	float sum;
 
 	f1 = 0;
 	f2 = 1;
 	display = f1 + f2;
 
-	for (i = 0; i < 4000000; i++)
+	for (i = 0; ; i++)
 	{
 		f1 = f2;
 		f2 = display;
 		display = f1 + f2;
 
-		if (display % 2 == 0 && i < 3999999)
+		if (display % 2 == 0 && display < 4000000)
 		{
 			sum = sum + display;
 		}
