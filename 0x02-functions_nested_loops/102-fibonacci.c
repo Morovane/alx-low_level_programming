@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, f1, f2, display;
+	long int i, f1, f2, display;
 
 	f1 = 0;
 	f2 = 1;
@@ -16,13 +16,13 @@ int main(void)
 	{
 		if (i < 49)
 		{
-			printf("%d, ", display);
+			printf("%ld, ", display);
 			f1 = f2;
 			f2 = display;
 			display = f1 + f2;
 		}
 		else
-			printf("%d", display);
+			printf("%ld", display);
 	}
 	printf("\n");
 	return (0);
