@@ -13,7 +13,7 @@ int main(void)
 	f2 = 1;
 	display = f1 + f2;
 
-	while (display < 4000000)
+	while (sum < 4000000)
 	{
 		f1 = f2;
 		f2 = display;
