@@ -19,7 +19,7 @@ int main(void)
 		f2 = display;
 		display = f1 + f2;
 
-		if (display % 2 == 0 && i < 9)
+		if (display % 2 == 0 && i < 3999999)
 		{
 			sum = sum + display;
 		}
