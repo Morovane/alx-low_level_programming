@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int i, f1, f2, display, sum;
+	unsigned long i, f1, f2, display, sum;
 
 	f1 = 0;
 	f2 = 1;
@@ -24,6 +24,6 @@ int main(void)
 			sum = sum + display;
 		}
 	}
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
