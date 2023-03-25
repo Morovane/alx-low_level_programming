@@ -13,7 +13,7 @@ int main(void)
 	f2 = 1;
 	display = f1 + f2;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 4000000; i++)
 	{
 		f1 = f2;
 		f2 = display;
