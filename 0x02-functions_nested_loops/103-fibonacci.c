@@ -7,24 +7,23 @@
  */
 int main(void)
 {
-	unsigned long i, f1, f2, display;
-	float sum;
+	unsigned long i, f1, f2, display, sum;
 
 	f1 = 0;
 	f2 = 1;
 	display = f1 + f2;
 
-	for (i = 0; ; i++)
+	while (display < 4000000)
 	{
 		f1 = f2;
 		f2 = display;
 		display = f1 + f2;
 
-		if (display % 2 == 0 && display < 4000000)
+		if (display % 2 == 0)
 		{
 			sum = sum + display;
 		}
 	}
-	printf("%.0f\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
