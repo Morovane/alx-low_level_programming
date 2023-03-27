@@ -18,7 +18,8 @@ void print_array(int *a, int n)
 			printf("%d, ", a[index]);
 		}
 		else
-			printf("%d\n", a[index]);
+			printf("%d", a[index]);
 		index++;
 	}
+	printf("\n");
 }
