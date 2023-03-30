@@ -8,9 +8,9 @@
  */
 void reverse_array(int *a, int n)
 {
-	int tmp, i, mn;
+	int tmp, i, index;
 
-	mn = n - 1;
+	index = n - 1;
 
 	if (mn % 2 != 0)
 		mn = mn + 1;
@@ -18,9 +18,9 @@ void reverse_array(int *a, int n)
 	for (i = 0; i <= mn / 2; i++)
 	{
 		tmp = a[i];
-		a[i] = a[mn];
-		a[mn] = tmp;
-		mn--;
+		a[i] = a[index];
+		a[index] = tmp;
+		--index;
 	}
 
 }
