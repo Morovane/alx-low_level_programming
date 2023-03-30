@@ -2,7 +2,7 @@
 
 /**
  * _strncpy - that copies a string
- * @des: parametre
+ * @dest: parametre
  * @src: parametre
  * @n: parametre
  * Return: dest
@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i > len -1)
+		if (i > len - 1)
 		{
 			dest[i] = '\0';
 		}
