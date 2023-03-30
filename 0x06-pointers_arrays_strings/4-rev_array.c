@@ -12,6 +12,9 @@ void reverse_array(int *a, int n)
 
 	mn = n - 1;
 
+	if (mn % 2 != 0)
+		mn = mn + 1;
+
 	for (i = 0; i <= mn / 2; i++)
 	{
 		tmp = a[i];
