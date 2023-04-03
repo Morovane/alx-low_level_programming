@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * _strpbrk - that searches a string for any of a set of bytes
+ * @s: array1
+ * @accept: array2
+ * Return: s+index or NULL
  */
 char *_strpbrk(char *s, char *accept)
 {
