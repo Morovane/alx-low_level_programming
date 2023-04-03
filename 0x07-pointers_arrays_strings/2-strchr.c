@@ -4,7 +4,7 @@
  * _strchr - function that locates a character in a string
  * @s: array
  * @c: carachter to find
- * Return: s 
+ * Return: s
  */
 char *_strchr(char *s, char c)
 {
@@ -14,7 +14,6 @@ char *_strchr(char *s, char c)
 	{
 		if (s[index] == c)
 			return (s + index);
-		
 		index++;
 	}
 	return ('\0');
