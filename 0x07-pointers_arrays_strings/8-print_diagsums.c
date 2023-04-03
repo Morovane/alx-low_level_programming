@@ -9,13 +9,13 @@
 void print_diagsums(int *a, int size)
 {
 	int i, sum = 0, sum2 = 0;
-	
+
 	for (i = 0; i < size; i++)
 	{
 		sum = sum + a[i];
-		a = a + size;	
+		a = a + size;
 	}
-	
+
 	for (i = 0; i < size; i++)
 	{
 		a = a - size;
