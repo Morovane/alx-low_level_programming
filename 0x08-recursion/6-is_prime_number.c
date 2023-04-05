@@ -10,7 +10,7 @@ int is_div(int n, int div)
 {
 	if (n % div == 0)
 		return (0);
-	if (div > num / 2)
+	if (div > n / 2)
 		return (1);
 	else
 		return (is_div(n, div + 1));
