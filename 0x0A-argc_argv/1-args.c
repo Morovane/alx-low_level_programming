@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main1 - Entry point
+ * main - Entry point
  * @argc: parametre
  * @argv: parametre
  * Return: Always 0
