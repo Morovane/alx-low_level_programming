@@ -6,7 +6,7 @@
  * @argv: parametre
  * Return: Always 0
  */
-int main1(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%d\n", argc - 1);
 
