@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main1 - Entry point
  * @argc: parametre
  * @argv: parametre
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main1(int argc, char *argv[])
 {
 	printf("%d\n", argc - 1);
 
