@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int NC = 0, mod, Newmod, i = 0;
 
 	mod = atoi(argv[1]);
-	if (argc > 1 && mod > 0)
+	if (argc == 2 && mod > 0)
 	{
 		do {
 			if (mod >= coins[i])
