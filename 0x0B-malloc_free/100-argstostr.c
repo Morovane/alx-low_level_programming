@@ -2,6 +2,10 @@
 #include <stdlib.h>
 
 /**
+ * argstostr - concatenates all the arguments of your program
+ * @ac: argument count
+ * @av: argument vector
+ * Return: str
  */
 char *argstostr(int ac, char **av)
 {
@@ -17,7 +21,7 @@ char *argstostr(int ac, char **av)
 			size++;
 	}
 
-	str = malloc(sizeof(char) * size);
+	str = malloc(sizeof(char) * size + 1);
 
 	if (str == NULL)
 		return (NULL);
