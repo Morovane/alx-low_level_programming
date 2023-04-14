@@ -47,6 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			else
 				concat[index] = s2[index - len1];
 		}
+		concat[index] = '\0';
 	}
 	else
 	{
@@ -60,6 +61,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			else
 				concat[index] = s2[index - len1];
 		}
+		concat[index] = '\0';
 	}
 	return (concat);
 }
