@@ -19,6 +19,7 @@ char *_memset(char *s, char b, unsigned int n)
 	return (s);
 
 }
+
 /**
  * _calloc - allocates memory for an array, using malloc
  * @nmemb: the number of case to allocates
@@ -27,9 +28,13 @@ char *_memset(char *s, char b, unsigned int n)
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *calloc = malloc(nmemb * size);
+	void *calloc;
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 
-	if (nmemb == 0 || size == 0 || calloc == NULL)
+	calloc = malloc(nmemb * size);
+
+	if (calloc == NULL)
 		return (NULL);
 
 	_memset(calloc, 0, sizeof(int) * nmemb);
