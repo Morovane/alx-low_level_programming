@@ -6,11 +6,11 @@
  * @str: The String
  * Return: lenght(len).
  */
-int len_str(char *str)
+int _strlen(char *str)
 {
-	int len;
+	int len = 0;
 
-	while (*str)
+	while (*str++)
 	{
 		len++;
 	}
@@ -23,7 +23,7 @@ int len_str(char *str)
  */
 int word_len(char *str)
 {
-	int len, i;
+	int len = 0, i = 0;
 
 	while (str[i] != ' ' && str[i] != '\0')
 	{
@@ -41,10 +41,9 @@ int word_len(char *str)
  */
 int count_word(char *str)
 {
-	int word, i = 0, len = 0;
+	int word = 0, i = 0, len = 0;
 
-	len = len_str(str);
-	i = 0;
+	len = _strlen(str);
 	while (i < len)
 	{
 		if (str[i] != ' ')
@@ -94,10 +93,8 @@ char **strtow(char *str)
 			return (NULL);
 		}
 		for (l = 0; l < letters; l++)
-		{
-			while (str[index] != ' ')
-				string[row][l] = str[index++];
-		}
+			string[row][l] = str[index++];
+
 		string[row][letters] = '\0';
 		row++;
 	}
