@@ -1,5 +1,17 @@
 #include "dog.h"
 
+char *_strcopy(char *dest, char *src)
+{
+	int index = 0;
+
+	for (index = 0; src[index]; index++)
+		dest[index] = src[index];
+
+	dest[index] = '\0';
+
+	return (dest);
+}
+
 /**
  * new_dog - that initialized a new dog
  * @name: argument
@@ -15,9 +27,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = name;
+	dog->name = _strcopy(dog->name, name);
 	dog->age = age;
-	dog->owner = owner;
+	dog->owner = _strcopy(dog->owner, owner);
 
 	return (dog);
 }
