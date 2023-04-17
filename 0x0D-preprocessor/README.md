@@ -1,5 +1,5 @@
-#0x0D. C - Preprocessor
-##Resources
+# 0x0D. C - Preprocessor
+## Resources
 #### Read or watch: ####
 
 * Understanding C program Compilation Process
