@@ -1,6 +1,11 @@
 #include "dog.h"
 
 /**
+ * new_dog - that initialized a new dog
+ * @name: argument
+ * @age: argument
+ * @owner: argument
+ * Return: struct(dog)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
