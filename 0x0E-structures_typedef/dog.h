@@ -2,12 +2,19 @@
 #define DOG_H
 
 #include <stdio.h>
-
-struct dog {
-
+/**
+ * struct dog - Poppy
+ * @name: first type
+ * @age: second type
+ * @owner: third type
+ *
+ * Description: Nothing
+ */
+struct dog
+{
 	char *name;
 	float age;
-	char *owner
+	char *owner;
 };
 
 #endif /*DOG_H*/
