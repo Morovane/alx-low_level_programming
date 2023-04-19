@@ -1,6 +1,9 @@
 #include "3-calc.h"
 
 /**
+ * get_op_func - function that return a function to pointer
+ * @s: the string of operation
+ * Return: the opperation function
  */
 int (*get_op_func(char *s))(int, int)
 {
