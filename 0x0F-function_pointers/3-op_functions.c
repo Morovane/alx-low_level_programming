@@ -45,7 +45,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod _ that return the module of two integers
+ * op_mod - that return the module of two integers
  * @a: num 1
  * @b: num 2
  * Return: a % b
