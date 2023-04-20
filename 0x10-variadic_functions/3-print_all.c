@@ -71,7 +71,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ar;
 	unsigned int i = 0, j;
-	prt form[] = {{"i", print_integer},
+	prt_t form[] = {{"i", print_integer},
 		{"c", print_char},
 		{"f", print_float},
 		{"s", print_str}
