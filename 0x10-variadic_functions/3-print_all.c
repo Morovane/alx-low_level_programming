@@ -1,6 +1,12 @@
 #include "variadic_functions.h"
 #include <string.h>
 
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
+void print_all(const char * const format, ...);
+
 /**
  * print_integer - that print int
  * @arg: argument type of va_list
@@ -21,7 +27,7 @@ void print_integer(va_list arg)
 void print_char(va_list arg)
 {
 	char c;
-	
+
 	c = va_arg(arg, int);
 	printf("%c", c);
 }
@@ -63,31 +69,29 @@ void print_str(va_list arg)
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0;
+	va_list ar;
+	unsigned int i = 0, j;
 	prt form[] = {{"i", print_integer},
 		{"c", print_char},
 		{"f", print_float},
 		{"s", print_str}
 	};
-	va_list arg;
 
-	va_start(arg, format);
-
+	va_start(ar, format);
 	while (format[i] != '\0')
 	{
-		unsigned int j = 0;
+		j = 0;
 
 		while (j < 4 && *(format + i) != *(form[j].symb))
 			j++;
 
 		if (j < 4)
-			form[j].print(arg);
+			form[j].print(ar);
 		if (j < strlen(format) - 1)
 			printf(", ");
 
 		i++;
 	}
 	printf("\n");
-	va_end(arg);
-
+	va_end(ar);
 }
