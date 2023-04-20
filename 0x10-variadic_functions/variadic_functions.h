@@ -15,7 +15,7 @@ typedef struct printer {
 
 	char *symb;
 	void (*print)(va_list arg);
-} prt;
+} prt_t;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
