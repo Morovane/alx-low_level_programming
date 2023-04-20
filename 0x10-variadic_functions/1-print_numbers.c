@@ -1,6 +1,10 @@
 #include "variadic_functions.h"
 
 /**
+ * print_numbers - function that print numbers
+ * @separator: character who separate the numbers
+ * @n: number of argument
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
