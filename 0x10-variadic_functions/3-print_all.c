@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <string.h>
 
 void print_integer(va_list arg);
 void print_char(va_list arg);
