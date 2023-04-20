@@ -48,7 +48,7 @@ void print_str(va_list arg)
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0;
+	int i = 0;
 	prt form[] = {{"i", print_integer},
 		{"c", print_char},
 		{"f", print_float},
@@ -60,9 +60,14 @@ void print_all(const char * const format, ...)
 
 	while (format[i] != '\0')
 	{
-		if (*(format + i) == *(form[i].symb))
-			form[i].print(arg);
-		if (i != 0 && i < strlen(format))
+		unsigned int j = 0;
+
+		while (j < 4 && *(format + i) != *(form[j].symb))
+			j++;
+
+		if (j < 4)
+			form[j].print(arg);
+		if (j < strlen(format) - 1)
 			printf(", ");
 
 		i++;
