@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 
+void print_integer(va_list arg);
 void print_char(va_list arg);
-void print_int(va_list arg);
 void print_float(va_list arg);
-void print_string(va_list arg);
+void print_str(va_list arg);
 void print_all(const char * const format, ...);
 
 /**
