@@ -2,6 +2,9 @@
 #include <string.h>
 
 /**
+ * print_integer - that print int
+ * @arg: argument type of va_list
+ * Return: void
  */
 void print_integer(va_list arg)
 {
@@ -11,6 +14,9 @@ void print_integer(va_list arg)
 	printf("%d", num);
 }
 /**
+ * print_char - that print character
+ * @arg: argument type of va_list
+ * Return: void
  */
 void print_char(va_list arg)
 {
@@ -20,6 +26,9 @@ void print_char(va_list arg)
 	printf("%c", c);
 }
 /**
+ * print_float - that print double
+ * @arg: argument type of va_list
+ * Return: void
  */
 void print_float(va_list arg)
 {
@@ -29,6 +38,9 @@ void print_float(va_list arg)
 	printf("%f", f);
 }
 /**
+ * print_str - that print string
+ * @arg: argument type of va_list
+ * Return: void
  */
 void print_str(va_list arg)
 {
@@ -45,6 +57,9 @@ void print_str(va_list arg)
 }
 
 /**
+ * print_all - function that print all type of argument past into
+ * @format: is the type of argument
+ * Return: void
  */
 void print_all(const char * const format, ...)
 {
