@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#include <string.h>
+
 
 void print_char(va_list arg);
 void print_int(va_list arg);
@@ -71,6 +71,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ar;
 	unsigned int i = 0, j;
+	char *separator = "";
 	prt_t form[] = {{"i", print_integer},
 		{"c", print_char},
 		{"f", print_float},
@@ -86,9 +87,11 @@ void print_all(const char * const format, ...)
 			j++;
 
 		if (j < 4)
+		{
+			printf("%s", separator)
 			form[j].print(ar);
-		if (j < strlen(format) - 1)
-			printf(", ");
+			separator = ", ";
+		}
 
 		i++;
 	}
