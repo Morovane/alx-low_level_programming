@@ -69,7 +69,8 @@ void print_str(va_list arg)
 void print_all(const char * const format, ...)
 {
 	va_list ar;
-	unsigned int i = 0, j;
+	int i = 0, j;
+	char *separator = "";
 	prt_t form[] = {{"i", print_integer},
 		{"c", print_char},
 		{"f", print_float},
@@ -77,7 +78,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ar, format);
-	while (format[i] != '\0')
+	while (format && (*(format + i)))
 	{
 		j = 0;
 
@@ -85,9 +86,11 @@ void print_all(const char * const format, ...)
 			j++;
 
 		if (j < 4)
+		{
+			printf("%s", separator);
 			form[j].print(ar);
-		if (j < strlen(format) - 1)
-			printf(", ");
+			separator = ", ";
+		}
 		i++;
 	}
 	printf("\n");
